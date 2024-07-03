@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Tech Goals for the Next 2 Years</h1>
+    </header>
+    <div class="container">
+        <section id="profile">
+            <h2>Providence Oduok</h2>
+            <!-- Slack Name -->
+            <p class="subtitle">Slack Display Name: <span data-testid="slackDisplayName">Pemily</span></p>
+            
+            <!-- Slack Display Picture -->
+            <img src="slackphoto.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture">
+            
+            <!-- Current UTC Time -->
+            <p data-testid="currentTimeUTC">Current Time in UTC: <span id="currentTimeUTC"></span></p>
+            
+            <!-- Current Day of the Week -->
+            <p data-testid="currentDay">Current Day: <span id="currentDay"></span></p>
+
+            <!-- Slack Email -->
+            <p data-testid="slackEmail">Slack Email: providentialprov1@gmail.com</p>
+        </section>
+
+        <section id="goals">
+            <h2>Goals for The Next 2 Years</h2>
+            <div class="summary">
+                <h3>Year 1</h3>
+                <p>Q1: Master front-end basics with HTML, CSS, and JavaScript.</p>
+                <p>Q2: Learn and build projects with ReactJS, CSS preprocessors, and frameworks.</p>
+                <p>Q3: Start back-end development with Node.js, Express, and MongoDB.</p>
+                <p>Q4: Build and deploy full-stack applications.</p>
+                <button onclick="toggleDetails('year1-details')">View Details</button>
+                <div id="year1-details" class="details hidden">
+                    <div class="quarter">
+                        <h4>Q1: Master Front-End Development Basics</h4>
+                            <ul>
+                                <li><strong>HTML & CSS</strong>
+                                <li>Complete an advanced HTML & CSS course.</li>
+                                <li>Build 3 static websites focusing on different layouts and designs.</li>
+                                <li>Learn responsive design principles and implement them in projects.</li>
+                                <li><strong>JavaScript</strong> 
+                                <li>Complete an in-depth JavaScript course.</li>
+                                <li>Build 3 projects using vanilla JavaScript (e.g., a to-do list, a weather app, a simple game).</li>
+                                
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="quarter">
+                        <h4>Q2: Dive into Modern Front-End Frameworks</h4>
+                        <ul>
+                            <li><strong>ReactJS</strong></li>
+                            <li>Complete a ReactJS course.</li>
+                            <li>Build 2-3 projects using ReactJS (e.g., a personal blog, a task manager, a photo gallery).</li>
+                            <li>Learn state management with Redux.</li>
+                            <li><strong>CSS Preprocessors & Frameworks</strong></li>
+                            <li>Learn and use Sass or LESS in a project.</li>
+                            <li>Experiment with CSS frameworks like Bootstrap or TailwindCSS.</li>
+                        </ul>
+                    </div>
+                    <div class="quarter">
+                        <h4>Q3: Begin Back-End Development</h4>
+                        <ul>
+                            <li><strong>Node.js & Express</strong></li>
+                            <li>Complete a Node.js and Express course.</li>
+                            <li>Build 2-3 simple APIs (e.g., a RESTful API for a blog, a user authentication system).</li>
+                            <li>Learn about and implement CRUD operations.</li>
+                            <li><strong>Database Management</strong></li>
+                            <li>Learn MongoDB and Mongoose.</li>
+                            <li>Integrate MongoDB with Node.js projects.</li>
+                            <li>Build a full-stack application with a database (e.g., a notes app with user authentication).</li>
+                        </ul>
+                    </div>
+                    <div class="quarter">
+                        <h4>Q4: Full-Stack Application Development</h4>
+                        <ul>
+                            <li><strong>Full-Stack Projects</strong></li>
+                            <li>Build a full-stack application from scratch (e.g., an e-commerce site, a social media platform).</li>
+                            <li>Learn deployment techniques (e.g., using Heroku, Netlify).</li>
+                            <li>Focus on application performance optimization and best practices.</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleDetails('year1-details')">Hide Details</button>
+                </div>
+            </div>
+            <div class="summary">
+                <h3>Year 2</h3>
+                <p>Q1: Advance in back-end development and explore other technologies.</p>
+                <p>Q2: Learn DevOps practices and cloud services.</p>
+                <p>Q3: Contribute to open-source projects and engage with the tech community.</p>
+                <p>Q4: Explore advanced topics and decide on a specialization.</p>
+                <button onclick="toggleDetails('year2-details')">View Details</button>
+                <div id="year2-details" class="details hidden">
+                    <div class="quarter">
+                        <h4>Q1: Advanced Back-End Development</h4>
+                        <ul>
+                            <li><strong>Advanced Node.js & Express</strong></li>
+                            <li>Learn about advanced topics like authentication, security, and middleware.</li>
+                            <li>Build a more complex API with role-based access control.</li>
+                            <li><strong>Other Back-End Technologies</strong></li>
+                            <li>Explore other back-end languages/frameworks (e.g., Python with Django, Ruby on Rails).</li>
+                        </ul>
+                    </div>
+                    <div class="quarter">
+                        <h4>Q2: DevOps & Cloud Services</h4>
+                        <ul>
+                            <li><strong>DevOps Basics</strong></li>
+                            <li>Learn about CI/CD pipelines.</li>
+                            <li>Use tools like Docker and Kubernetes for containerization.</li>
+                            <li><strong>Cloud Services</strong></li>
+                            <li>Get familiar with cloud providers (e.g., AWS, Azure, Google Cloud).</li>
+                            <li>Deploy applications using cloud services.</li>
+                        </ul>
+                    </div>
+                    <div class="quarter">
+                        <h4>Q3: Open Source Contributions & Community Engagement</h4>
+                        <ul>
+                            <li><strong>Open Source</strong></li>
+                            <li>Contribute to at least 3 open-source projects.</li>
+                            <li>Learn the process of submitting pull requests, issues, and collaborating on GitHub.</li>
+                            <li><strong>Community Engagement</strong></li>
+                            <li>Participate in 2-3 hackathons or coding competitions.</li>
+                            <li>Join and actively participate in tech communities and meetups.</li>
+                        </ul>
+                    </div>
+                    <div class="quarter">
+                        <h4>Q4: Advanced Topics & Specialization</h4>
+                        <ul>
+                            <li><strong>Advanced Topics</strong></li>
+                            <li>Learn about microservices architecture.</li>
+                            <li>Explore serverless architecture and functions.</li>
+                            <li><strong>Specialization</strong></li>
+                            <li>Decide on a specialization (e.g., full-stack, front-end, back-end).</li>
+                            <li>Deep dive into the chosen specialization with advanced courses and projects.</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleDetails('year2-details')">Hide Details</button>
+                </div>
+            </div>
+        </section>
+        <section id="links">
+            <h2>Useful Links</h2>
+            <a href="https://hng.tech/learn" data-testid="hngLink">HNG Tech</a>
+            <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+            <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy;Providence ~ 2024 | My Tech Journey</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

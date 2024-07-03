@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4d2c50;
+    color: #561c39 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+header {
+    background-color: deeppink;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+.container {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgb(255, 105, 180);
+    text-align: center;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 100%;
+    margin: 24px;
+}
+
+#profile {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#profile img {
+    border-radius: 50%;
+    margin: 16px 0;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 2px 10px rgb(255, 105, 180);
+}
+.container p{
+    color: rgb(168, 0, 90);
+    margin: 8px 0;
+    font-family: cursive;
+}
+
+
+#goals, #links {
+    margin: 2em;
+    padding: 1em;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px hotpink;
+}
+
+#goals h2, #links h2, h2, .subtitle, h3 {
+    color: deeppink;
+    margin-bottom: 16px;
+}
+.summary {
+    margin-bottom: 1em;
+    text-align: left;
+    font-family: cursive;
+
+}
+    
+.summary h3 {
+    margin-top: 0;
+}
+.summary p{
+    margin-left: 16px;
+}
+.quarter ul {
+    text-align: left;
+    margin: 20px 16px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.quarter ul li {
+    background: #f6c8fa;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    
+}
+.details {
+    margin-top: 1em;
+}
+.hidden {
+    display: none;
+}
+button {
+    background-color: hotpink;
+    color: #561c39;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #eeb1f3;
+}
+#links a {
+    display: block;
+    margin: 10px 0;
+    color: hotpink;
+    text-decoration: none;
+    font-weight: bold;
+}
+#links a:hover {
+    text-decoration: underline;
+    color: #eeb1f3;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: deeppink;
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .links a {
+        margin: 5px 0;
+    }
+
+    #goals, #links {
+        margin: 1em;
+        padding: 1em;
+    }
+    footer {
+        position: relative;
+    }
+}
